@@ -19,8 +19,26 @@
                 <label for="new-password">Create a New Password: <input id="new-password" type="password" pattern="([a-z]+[A-Z]+[0-9]+){8,}" required/></label>
 
             </fieldset>
-            <fieldset></fieldset>
-            <fieldset></fieldset>
+            <fieldset>
+                <legend>Account type (required)</legend>
+                <label for="personal-account"><input name="account-type" type="radio" checked id="personal-account"/> Personal</label>
+                <label for="business-account"><input name="account-type" type="radio" id="business-account"/> Business</label>
+            </fieldset>
+            <fieldset>
+                <label>Upload a profile picture: <input type="file"></label>
+                <label>Input your age (years): <input type="number" min="13" max="120"></label>
+                <label>How did you hear about us?
+                    <select>
+                        <option value="">(select one)</option>
+                        <option value="1">Social Media/Influencer</option>
+                        <option value="2">Advertising</option>
+                        <option value="3">Friends/Relatives</option>
+                        <option value="4">Other</option> <!--37-->
+                    </select>
+                </label>
+
+            </fieldset>
+            <label for="terms-and-conditions"><input type="checkbox" id="terms-and-conditions" required/>I accept the <a href="">terms and conditions</a></label>
             <input type="submit" value="Submit"/>
         </form>
     </body>
