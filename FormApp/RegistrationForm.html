@@ -13,10 +13,10 @@
 
         <form action="" method="post">
             <fieldset>
-                <label for="first-name">Enter Your First Name: <input id="first-name" type="text" required/></label>
-                <label for="last-name">Enter Your Last Name: <input id="last-name" type="text" required/></label>
-                <label for="email">Enter Your Email: <input id="email" type="email" required/></label>
-                <label for="new-password">Create a New Password: <input id="new-password" type="password" pattern="([a-z]+[A-Z]+[0-9]+){8,}" required/></label>
+                <label for="first-name">Enter Your First Name: <input name="first-name" id="first-name" type="text" required/></label>
+                <label for="last-name">Enter Your Last Name: <input name="last-name" id="last-name" type="text" required/></label>
+                <label for="email">Enter Your Email: <input name="email" id="email" type="email" required/></label>
+                <label for="new-password">Create a New Password: <input name="new-pass" id="new-password" type="password" pattern="([a-z]+[A-Z]+[0-9]+){8,}" required/></label>
 
             </fieldset>
             <fieldset>
@@ -25,10 +25,10 @@
                 <label for="business-account"><input name="account-type" type="radio" id="business-account"/> Business</label>
             </fieldset>
             <fieldset>
-                <label for="profile-picture">Upload a profile picture: <input type="file" id="profile-picture"></label>
-                <label for="age">Input your age (years): <input type="number" min="13" max="120" id="age"></label>
+                <label for="profile-picture">Upload a profile picture: <input name="profile-picture" type="file" id="profile-picture"></label>
+                <label for="age">Input your age (years): <input name="age" type="number" min="13" max="120" id="age"></label>
                 <label for="referrer">How did you hear about us?
-                    <select id="referrer">
+                    <select id="referrer" name="referrer">
                         <option value="">(select one)</option>
                         <option value="1">Social Media/Influencer</option>
                         <option value="2">Advertising</option>
@@ -37,10 +37,10 @@
                     </select>
                 </label>
                 <label for="bio">
-                    Provide a bio: <textarea id="bio" rows="3" cols="30" placeholder="Lorem Ipsum"></textarea> <!--38-->
+                    Provide a bio: <textarea name="bio" id="bio" rows="3" cols="30" placeholder="Lorem Ipsum"></textarea> <!--38-->
                 </label>
             </fieldset>
-            <label for="terms-and-conditions"><input type="checkbox" id="terms-and-conditions" required/>I accept the <a href="">terms and conditions</a></label>
+            <label for="terms-and-conditions"><input name="t&c" type="checkbox" id="terms-and-conditions" required/>I accept the <a href="">terms and conditions</a></label>
             <input type="submit" value="Submit"/>
         </form>
     </body>
