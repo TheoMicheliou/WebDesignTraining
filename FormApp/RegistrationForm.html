@@ -25,10 +25,10 @@
                 <label for="business-account"><input name="account-type" type="radio" id="business-account"/> Business</label>
             </fieldset>
             <fieldset>
-                <label>Upload a profile picture: <input type="file"></label>
-                <label>Input your age (years): <input type="number" min="13" max="120"></label>
-                <label>How did you hear about us?
-                    <select>
+                <label for="profile-picture">Upload a profile picture: <input type="file" id="profile-picture"></label>
+                <label for="age">Input your age (years): <input type="number" min="13" max="120" id="age"></label>
+                <label for="referrer">How did you hear about us?
+                    <select id="referrer">
                         <option value="">(select one)</option>
                         <option value="1">Social Media/Influencer</option>
                         <option value="2">Advertising</option>
@@ -36,8 +36,8 @@
                         <option value="4">Other</option> 
                     </select>
                 </label>
-                <label>
-                    Provide a bio: <textarea></textarea> <!--38-->
+                <label for="bio">
+                    Provide a bio: <textarea id="bio" rows="3" cols="30" placeholder="Lorem Ipsum"></textarea> <!--38-->
                 </label>
             </fieldset>
             <label for="terms-and-conditions"><input type="checkbox" id="terms-and-conditions" required/>I accept the <a href="">terms and conditions</a></label>
